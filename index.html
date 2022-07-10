@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>xXbob05Xx's Website</title>
+<meta name="title" content="xXbob05Xx's Website">
+<meta name="description" content="Welcome to my website! Discover my projects and learn how to make your own resource-packs for free.">
+
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://xXbob05Xx.github.io">
+<meta property="og:title" content="xXbob05Xx's Website">
+<meta property="og:description" content="A website where you can find some infos about xXbob05Xx and his Projects and you can found links for contact him.">
+<meta property="og:image" content="assets/xXbob05Xx_website.png">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="icon" type="image/png" href="assets/bob_icon.png" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@700&family=JetBrains+Mono:wght@300&family=Montserrat:wght@800&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style type="text/css">
+html {scroll-behavior: smooth;user-select: none}
+body {margin: 0;padding: 0;background-color: #100f12; background-image: url("assets/bg_pattern.png");font-family: 'Montserrat', sans-serif;}
+.second-div {
+	width: calc(90% - 30px);
+	margin: 0px auto 15px auto;
+	display: flex;
+	flex-direction: row;
+	background: #201d24;
+	padding: 15px;
+	border-radius: 0px 0px 8px 8px;
+	box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.18);
+}
+.col1 {
+	width: 25%
+}
+.col2 {
+	width: 25%
+}
+.col3 {
+	width: 25%
+}
+.col4 {
+	width: 25%
+}
+.square-big {
+	width: 100%;
+	padding-top: 100%;
+	position: relative;
+	overflow: hidden
+}
+.square-small-container {
+	width: 100%;
+	padding-top: 50%;
+	display: flex;
+	position: relative
+}
+.square-small-1 {
+	width: 50%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	overflow: hidden
+}
+.square-small-2 {
+	width: 50%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	right: 0;
+	overflow: hidden
+}
+.square-big img {
+	position: absolute;
+	width: 100%;
+	top: 0px;
+	left: 0px;
+	outline: 3px solid #ffb200;
+	transition-duration: 0.2s
+}
+.square-small-1 img {
+	position: absolute;
+	width: 100%;
+	top: 0px;
+	left: 0px;
+	outline: 3px solid #ffb200;
+	transition-duration: 0.2s
+}
+.square-small-2 img {
+	position: absolute;
+	width: 100%;
+	top: 0px;
+	left: 0px;
+	outline: 3px solid #ffb200;
+	transition-duration: 0.2s
+}
+.square-big img:hover {transform: scale(0.96);} .square-small-1 img:hover {transform: scale(0.94)} .square-small-2 img:hover {transform: scale(0.94)}
+.nav-itembox:hover h2 {color: white;}
+.nav-logodiv img:hover {transform: scale(1.02);}
+nav {
+	width: calc(100% - 12px);
+	top: 4px;
+	left: 6px;
+	height: 52px;
+	margin: auto;
+	background-color: #2e2933;
+	position: fixed;
+	z-index: 100;
+	box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.18);
+	border-radius: 8px;
+}
+.nav-itembox h2 {
+	display: inline;
+	font-size: 20pt;
+	color: rgba(255, 255, 255, 0.5);
+	transition: all 0.2s ease-in-out;
+	font-weight: normal;
+}
+.nav-logodiv {
+	width: 25%;
+	height: 100%;
+	float: left;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.nav-logodiv img {
+	height: 50px;
+	width: auto;
+	align-items: center;
+	margin-top: 5px;
+	transition: all 0.2s ease-in-out;
+}
+.nav-itembox {
+	cursor: pointer;
+	width: 25%;
+	height: 70px;
+	line-height: 52px;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	float: left;
+	transition: all 0.2s ease-in-out;
+}
+.nav-navdiv {width: 58%;height: 100%;float: left;}
+.nav-helper {width: 100%;height: 100%;overflow: hidden;}
+
+::-webkit-resizer {
+	display: block;
+	width: 5px;
+	height: 5px;
+	background-image: url("assets/resize.png");
+	background-size: 65% 65%;
+	background-repeat: no-repeat;
+}
+::-webkit-scrollbar {width: 8px;}
+::-webkit-scrollbar-track {background: #564b63;border-radius: 200px;}
+::-webkit-scrollbar-thumb {background: #ffb200;border-radius: 200px;}
+::-webkit-scrollbar-thumb:hover {background: #ffb200;}
+
+.first-div {
+	margin: 150px auto 160px auto;
+	width: 100%;
+	display: flex;
+}
+.split-in-2b {
+	width: 100%;
+	display: flex
+}
+
+.discord-widget {
+	width: 30%;
+	margin: 0px auto 0px auto;
+	border-radius: 8px;
+	overflow: hidden;
+	box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.18);
+}
+.discord-title {
+	display: none
+}
+.split-in-2 {
+	width: 100%;
+	display: flex;
+	background: #ffb200
+}
+.imgboxlogo {
+	width: 50%;
+	text-align: center;
+}
+.imgboxlogo img {
+	margin-top: 10px;
+	height: 50px
+}
+.discord-users-online {
+	width: 50%;
+	margin: 0;
+	height: 70px;
+	line-height: 70px;
+	text-align: center;
+	font-family: 'Roboto', sans-serif;
+	color: white;
+	font-weight: bold;
+	font-size: 18pt 
+}
+.discord-users-online::before {
+	content: "Users Online: ";
+	font-size: 14pt;
+	color: rgba(255, 255, 255, 0.75)
+}
+.discord-tree {display: none}
+.bgdiscord {
+	width: 100%;
+	background-color: #221f26;
+	height: 512px;
+}
+.bgdiscord img {
+	width: 100%
+}
+.discord-join {
+	width: 100%;
+	background-color: #201d24;
+	margin: 0;
+	text-align: center;
+	height: 50px;
+	line-height: 50px;
+	border-top: 2px solid #17141a;
+	box-shadow: inset 0px 30px 5px -30px rgba(0, 0, 0, 0.25);
+	transition: 0.2s ease-in-out;
+	position: relative;
+	font-size: 18pt
+}
+.discord-join a {
+	color: rgba(255, 255, 255, 0.75);
+	text-decoration: none;
+	font-family: 'Montserrat', sans-serif;
+	transition: 0.2s ease-in-out;
+}
+.discord-join a:hover {
+	color: white;
+}
+.discord-join:hover {
+	background-color: #ffb200
+}
+
+.filler {
+	width: 50%;
+	text-align: center;
+}
+.filler h1 {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 46pt;
+	color: white;
+	margin: 0px 0px 15px 0px 
+}
+.filler p {
+	color: white;
+	font-family: 'Roboto', sans-serif;
+	font-size: 16pt;
+}
+.filler img {
+	width: 50%;
+}
+.titleh2 {
+	background-color: #ffb200;
+	width: calc(90% - 30px);
+	font-size: 25pt;
+	margin: 0px auto 0px auto;
+	padding: 5px 15px 5px 15px;
+	border-radius: 8px 8px 0px 0px;
+	color: white
+}
+[id] {
+	scroll-margin-top: 66px;
+}
+
+.third-div {
+	width: calc(90% - 30px);
+	margin: 0px auto 15px auto;
+	display: flex;
+	flex-direction: row;
+	background: #201d24;
+	padding: 15px;
+	border-radius: 0px 0px 8px 8px;
+	box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.18);
+}
+.modalcontainer {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.modal {
+	background-color: #333036;
+	width: 25%;
+	height: 450px;
+	margin: 0px 2% 0px 2%;
+	border-radius: 8px
+}
+.modal-first-half {
+	width: 160px;
+	height: 160px;
+	background-color: #201d24;
+	margin: 10px auto;
+	border-radius: 200px;
+	overflow: hidden
+}
+.modal-first-half img {
+	width: 100%
+}
+.modal-title {
+	width: 100%;
+	font-family: 'Heebo', sans-serif;
+	font-size: 16pt;
+	text-align: center;
+	color: white
+}
+.modal-2title {
+	width: 100%;
+	font-family: 'Heebo', sans-serif;
+	font-size: 13pt;
+	text-align: center;
+	color: white
+}
+.modal-text {
+	width: calc(100% - 40px);
+	color: rgba(255, 255, 255, 0.5);
+	padding: 0px 20px 0px 20px;
+	font-family: 'Roboto', sans-serif;
+	font-size: 13pt;
+	text-align: center
+}
+.modal-just-text {
+	width: calc(100% - 40px);
+	color: rgba(255, 255, 255, 0.5);
+	padding: 0px 20px 0px 20px;
+	font-family: 'Roboto', sans-serif;
+	font-size: 13pt;
+	text-align: justify
+}
+.icon-container {
+	width: 100%;
+	height: 50px;
+	margin: 10px 0px 20px 0px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.icon-box {
+	width: 45px;
+	height: 45px;
+	margin: 0px 10px 0px 10px;
+	transition: 0.2s ease-in-out
+}
+.icon-box img {
+	width: 100%;
+}
+.icon-box:hover {
+	transform: scale(1.15)
+}
+.nav-donatediv a {text-decoration: none}
+.nav-donatediv {width: 400px;height: 100%; margin: -52px 1% 0px 0px; float: right}
+.nav-donatediv a div p i, .nav-itembox i {font-size: 12pt;}
+.nav-donatediv a div:hover {transform: scale(1.02);box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.18);}
+.nav-donatediv a div {
+	width: 200px;
+	height: 34px;
+	margin: 9px auto 9px auto;
+	text-align: center;
+	border-radius: 4px;
+	background-color: #ffb200;
+	line-height: 36px;
+	box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.18);
+	transition: all 0.2s ease-in-out;
+}
+.nav-donatediv a div p {
+	margin: 0;
+	padding: 0px 15px 0px 15px ;
+	font-size: 12pt;
+	font-weight: 500;
+	color: white;
+}
+.Cend {
+	text-align: center !important;
+    padding: 5px 6px;
+    color: #ecf2ff;
+    padding: 30px 30px
+}
+
+.mobile-nav {display: none}
+.mobile-nav-img {display: none}
+
+@media (max-width: 480px) {
+	nav {display: none}
+	.mobile-nav-img {width: 100%; text-align: center; display: block; margin-bottom: 50px}
+	.mobile-nav-img img {width: 100%;margin-left: -30px}
+	.mobile-nav {
+		background-color: #2e2933;
+		width: 100%;
+		height: 70px;
+		position: fixed;
+		left: 0;
+		right: 0;
+		margin: auto;
+		bottom: 0;
+		z-index: 200;
+		box-shadow: 0px -3px 12px 0px rgba(0,0,0,0.28);
+		display: flex;
+		justify-content: center
+	}
+	.mobile-nav-div, .mobile-nav-div2 {
+		width: 25%;
+		text-align: center;
+	}
+	.mobile-nav-div img, .mobile-nav-div2 img {
+		height: 100%;
+	}
+	.mobile-nav-div:hover {
+		background-color: #ffb200
+	}
+	.mobile-nav-div2:hover {
+		background-color: #3E7BFA
+	}
+	.first-div {
+		margin: 0px auto 30px auto;
+	}
+	.split-in-2b {
+		display: block
+	}
+	.filler {
+		width: 100%;
+	}
+	.filler h1 {font-size: 20pt}
+	.filler p {font-size: 14pt;}
+	.discord-widget {
+		width: 90%
+	}
+	.discord-users-online {
+		height: 40px;
+		font-size: 10pt;
+		line-height: 40px;
+	}
+	.discord-users-online::before {
+		font-size: 10pt;
+	}
+	.imgboxlogo img {
+		margin: 5px auto 0px auto;
+		height: 30px;
+	}
+	.discord-join {
+		height: 30px;
+		line-height: 30px;
+		font-size: 12pt;
+	}
+	[id] {
+		scroll-margin-top: 200px;
+	}
+	.second-div {
+		flex-wrap: wrap;
+		margin-bottom: 30px
+	}
+	.col1, .col2, .col3, .col4 {flex: 0 0 50%}
+	.third-div {
+		margin-bottom: 100px
+	}
+	.titleh2 {
+		height: 30px;
+		line-height: 30px;
+		font-size: 14pt;
+	}
+	.modalcontainer {
+		flex-wrap: wrap;
+	}
+	.modal-first-half {width: 128px; height: 128px}
+	.modal {
+		flex: 0 0 100%;
+		margin: 10px 0px 10px 0px;
+		height: auto;
+		padding-bottom: 25px;
+	}
+	.modal-title {font-size: 14pt; margin-bottom: 10px}
+	.modal-text {font-size: 12pt;}
+	.icon-container {
+		height: 30px;
+	}
+	.icon-box {
+		width: 100px;
+		margin: 5px auto 5px auto;
+		text-align: center;
+	}
+	.icon-box img {height: 100%; width: auto; text-align: center}
+	.bgdiscord {height: 256px}
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+	nav {display: none}
+	.mobile-nav-img {width: 100%; text-align: center; display: block; margin-bottom: 50px}
+	.mobile-nav-img img {width: 100%;margin-left: -30px}
+	.mobile-nav {
+		background-color: #2e2933;
+		width: 100%;
+		height: 100px;
+		position: fixed;
+		left: 0;
+		right: 0;
+		margin: auto;
+		bottom: 0;
+		z-index: 200;
+		box-shadow: 0px -3px 12px 0px rgba(0,0,0,0.28);
+		display: flex;
+		justify-content: center
+	}
+	.mobile-nav-div, .mobile-nav-div2 {
+		width: 25%;
+		text-align: center;
+	}
+	.mobile-nav-div img, .mobile-nav-div2 img {
+		height: 100%;
+	}
+	.mobile-nav-div:hover {
+		background-color: #ffb200
+	}
+	.mobile-nav-div2:hover {
+		background-color: #3E7BFA
+	}
+	.first-div {
+		margin: 0px auto 30px auto;
+	}
+	.split-in-2b {
+		display: block
+	}
+	.filler {
+		width: 100%;
+	}
+	.filler h1 {font-size: 22pt}
+	.filler p {font-size: 16pt;}
+	.discord-widget {
+		width: 70%
+	}
+	.discord-users-online {
+		height: 40px;
+		font-size: 12pt;
+		line-height: 40px;
+	}
+	.discord-users-online::before {
+		font-size: 12pt;
+	}
+	.imgboxlogo img {
+		margin: 5px auto 0px auto;
+		height: 30px;
+	}
+	.discord-join {
+		height: 30px;
+		line-height: 30px;
+		font-size: 14pt;
+	}
+	[id] {
+		scroll-margin-top: 200px;
+	}
+	.second-div {
+		flex-wrap: wrap;
+		margin-bottom: 30px
+	}
+	.col1, .col2, .col3, .col4 {flex: 0 0 50%}
+	.third-div {
+		margin-bottom: 130px
+	}
+	.titleh2 {
+		height: 30px;
+		line-height: 30px;
+		font-size: 16pt;
+	}
+	.modalcontainer {
+		flex-wrap: wrap;
+	}
+	.modal-first-half {width: 128px; height: 128px}
+	.modal {
+		flex: 0 0 70%;
+		margin: 10px 0px 10px 0px;
+		height: auto;
+		padding-bottom: 25px;
+	}
+	.modal-title {font-size: 16pt; margin-bottom: 10px}
+	.modal-text {font-size: 14pt;}
+	.icon-container {
+		height: 30px;
+	}
+	.icon-box {
+		width: 100px;
+		margin: 5px auto 5px auto;
+		text-align: center;
+	}
+	.icon-box img {height: 100%; width: auto; text-align: center}
+	.bgdiscord {height: auto}
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+	.nav-helper {overflow: visible}
+	.nav-logodiv img {
+		height: 30px;
+		margin-left: -20px
+	}
+	.nav-navdiv {width: 45%}
+	.nav-itembox {width: 33.3%}
+	.nav-itembox h1 {font-size: 18pt}
+	.nav-donatediv {width: 28%; margin-top: 0px}
+	.first-div {margin: 80px auto 50px auto}
+	.filler h1 {font-size: 22pt}
+	.filler p {font-size: 16pt}
+	.discord-widget {width: 40%;height: 345px}
+	.discord-widget .split-in-2 { height: 40px}
+	.imgboxlogo img {height: 80%; margin: 4px auto 4px auto}
+	.discord-users-online {height: 40px;line-height: 40px;font-size: 14pt}
+	.discord-users-online::before {font-size: 12pt}
+	.bgdiscord {height: 256px}
+	.titleh2 {font-size: 18pt}
+	.second-div {margin-bottom: 50px}
+	.modal {flex: 0 0 30%; height: 500px}
+	.modal-title {font-size: 16pt}
+	.modal-text {font-size: 10pt}
+}
+</style>
+</head>
+<body>
+	<nav>
+		<div class="nav-helper">
+			<div class="nav-logodiv">
+				<a href="index.html">
+					<div class="nav-imgbox">
+						<img src="assets/logo_small.png">
+					</div>
+				</a>
+			</div>
+
+			<div class="nav-navdiv">
+				<a href="#Home"><div class="nav-itembox"><h2>Home</h2></div></a>
+				<a href="#List_of_Links"><div class="nav-itembox"><h2>List of Links</h2></div></a>
+				<a href="#About"><div class="nav-itembox"><h2>About</h2></div></a>
+			</div>
+			<div class="nav-donatediv"><a href="https:/discord.gg/pnwNDhX7AU"><div><p>Discord</p></div></a></div>
+		</div>
+	</nav>
+	<div class="mobile-nav-img"><img src="assets/logo_small.png"></div>
+	<div class="mobile-nav">
+		<div class="mobile-nav-div"><a href="#Home"><img src="https://imgur.com/jYtVFj9.png"></a></div>
+		<div class="mobile-nav-div"><a href="#List_of_Links"><img src="assets/Linked.png"></a></div>
+		<div class="mobile-nav-div"><a href="#About"><img src="assets/[ xX𝗯𝗼𝗯𝟬𝟱Xx ].png"></a></div>
+		<div class="mobile-nav-div2"><a href="https:/discord.gg/pnwNDhX7AU"><img src="assets/discord_logo.png"></a></div>
+	</div>
+	<div class="first-div" id="Home">
+		<script type="text/javascript" src="js/discord.min.js"></script>
+		<script type="text/javascript">
+		    discordWidget.init({
+		        serverId: '710686886028378114',
+		        join: true,
+		        theme: 'dark',
+		        hideChannels: ['⌈✅⌋❯𝗖𝗮𝗽𝘁𝗰𝗵𝗮'],
+		        showAllUsers: true,
+		        allUsersDefaultState: true
+		    });
+		    discordWidget.render();
+		</script>
+		<div class="split-in-2b">
+			<div class="filler">
+				<h1>Welcome in my Website!</h1>
+				<p>Join my Discord server and You're never miss anything.</p>
+				<img src="assets/[ xX𝗯𝗼𝗯𝟬𝟱Xx ].png">
+			</div>
+			<div class="discord-widget"></div>
+		</div>
+	</div>
+	<h2 class="titleh2" id="List_of_Links">List of Links</h2>
+	<div class="second-div">
+		<div class="col1">
+		</div>
+		<div class="col2">
+			<div class="square-big">
+				<a target="_blank" href="https://discord.com/api/oauth2/authorize?client_id=862482887046725673&permissions=8&scope=bot">
+				<img src="assets/Aura.png"></a>
+				<div class="modal-title">Aura Discord Bot</div>
+			</div>
+
+		</div>
+		<div class="col3">
+			<div class="square-small-container">
+				<div class="square-small-1">
+					<a target="_blank" href="https://discord.com/api/oauth2/authorize?client_id=776584170112811029&permissions=8&scope=bot">
+					<img src="assets/Sombrax.png"></a>
+				</div>
+				<div class="modal-2title">Sombrax Discord Bot</div>
+				<div class="square-small-2">
+					<a target="_blank" href="https://discord.com/oauth2/authorize?client_id=809073438655643668&permissions=8&scope=bot">
+					<img src="assets/Exodis-Project.png"></a>
+				</div>
+				<div class="modal-2title">Exodis Discord Bot</div>
+			</div>
+
+		</div>
+		<div class="col4">
+		</div>
+	</div>
+
+	<h2 class="titleh2" id="About">About Me</h2>
+	<div class="third-div">
+		<div class="modalcontainer">
+			<div class="modal">
+				<div class="modal-first-half"><img src="assets/bob_icon.png" ></div>
+				<div class="modal-title">About xXbob05Xx</div>
+				<div class="modal-text">
+I'm xXbob05Xx, I'm a Philippine (but i born and live in Italy) Minecraft Builder/Resource Pack and Models Maker and a HTML/css/js Developer.
+				</div>
+			</div>
+			<div class="modal">
+				<div class="modal-first-half"><img src="assets/marker.png" ></div>
+				<div class="modal-title">Where you can found me</div>
+				<div class="modal-just-text" style="text-align: center">Socials:</div>
+					<div class="icon-container">
+						<div class="icon-box"><a href="https://www.twitch.tv/twobrothersingame" target="_blank"><img src="assets/twitch.png" title="Twitch"></a></div>
+						<div class="icon-box"><a href="https://www.youtube.com/c/xXbob05Xx" target="_blank"><img src="assets/Youtube.png" title="YouTube"></a></div>
+						<div class="icon-box"><a href="https://www.instagram.com/xx_bob05_xx/" target="_blank"><img src="assets/instagram.png" title="Instagram"></a></div>
+						<div class="icon-box"><a href="https:/discord.gg/pnwNDhX7AU" target="_blank"><img src="assets/discord_logo.png" title="Discord"></a></div>
+					</div>
+			</div>
+		</div>
+	</div>
+	<div class="Cend">
+		<img src="assets/KS 1080.png" width="150"><br />
+		Copyright © xXbob05Xx - 2022
+	</div>
+</body>
+</html>
